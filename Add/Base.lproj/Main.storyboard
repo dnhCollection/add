@@ -61,13 +61,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bTv-4e-1hN">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                                <animations/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ms7-vn-FZo">
-                                <rect key="frame" x="28" y="30" width="406" height="80"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ms7-vn-FZo">
+                                <rect key="frame" x="28" y="30" width="544" height="80"/>
                                 <animations/>
                                 <color key="backgroundColor" red="0.54720986849999997" green="0.41101866869999998" blue="0.6974234533" alpha="1" colorSpace="calibratedRGB"/>
                                 <gestureRecognizers/>
@@ -84,24 +79,8 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ArN-BW-Fu7">
-                                <rect key="frame" x="442" y="30" width="130" height="80"/>
-                                <animations/>
-                                <color key="backgroundColor" red="0.4601217595" green="0.65911063759999999" blue="0.38141697320000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="236" id="i2Q-O1-Qd1"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="i2Q-O1-Qd1"/>
-                                    </mask>
-                                </variation>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yF6-d9-hBd">
-                                <rect key="frame" x="28" y="508" width="544" height="72"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yF6-d9-hBd">
+                                <rect key="frame" x="224" y="537" width="153" height="43"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
@@ -110,24 +89,27 @@
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="bTv-4e-1hN" firstAttribute="leading" secondItem="7hw-B3-LWQ" secondAttribute="leadingMargin" constant="-20" id="4fZ-C0-RMg"/>
-                            <constraint firstItem="Skw-rG-0ll" firstAttribute="top" secondItem="bTv-4e-1hN" secondAttribute="bottom" id="GFP-uZ-IJk"/>
-                            <constraint firstItem="ArN-BW-Fu7" firstAttribute="top" secondItem="ms7-vn-FZo" secondAttribute="top" id="JvM-Cz-kWB"/>
-                            <constraint firstItem="ArN-BW-Fu7" firstAttribute="leading" secondItem="ms7-vn-FZo" secondAttribute="trailing" constant="8" id="S3p-YW-AhI"/>
-                            <constraint firstItem="bTv-4e-1hN" firstAttribute="top" secondItem="7hw-B3-LWQ" secondAttribute="topMargin" id="SRL-sG-qgF"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="bTv-4e-1hN" secondAttribute="trailing" constant="-20" id="hUF-Rf-Y31"/>
-                            <constraint firstItem="ArN-BW-Fu7" firstAttribute="bottom" secondItem="ms7-vn-FZo" secondAttribute="bottom" id="vIn-Zu-BmQ"/>
+                            <constraint firstItem="Skw-rG-0ll" firstAttribute="top" secondItem="yF6-d9-hBd" secondAttribute="bottom" constant="20" id="AfC-XT-7sk"/>
+                            <constraint firstItem="yF6-d9-hBd" firstAttribute="centerX" secondItem="7hw-B3-LWQ" secondAttribute="centerX" id="Gde-8C-Htx"/>
+                            <constraint firstItem="ms7-vn-FZo" firstAttribute="top" secondItem="CgG-M8-mvO" secondAttribute="bottom" constant="10" id="SOc-At-cPa"/>
+                            <constraint firstItem="ms7-vn-FZo" firstAttribute="centerX" secondItem="7hw-B3-LWQ" secondAttribute="centerX" id="YUr-M1-tnC"/>
+                            <constraint firstItem="ms7-vn-FZo" firstAttribute="leading" secondItem="7hw-B3-LWQ" secondAttribute="leadingMargin" constant="8" id="bDb-Rc-OrI"/>
                         </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="xfs-ws-Mua" appends="YES" id="Yyw-K4-LrW"/>
+                        </connections>
                     </view>
                     <connections>
-                        <outlet property="refView" destination="bTv-4e-1hN" id="Uvc-Vx-Uu3"/>
+                        <outlet property="display" destination="ms7-vn-FZo" id="edS-qs-q7R"/>
+                        <outlet property="timerDisplay" destination="yF6-d9-hBd" id="eTo-Du-B78"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eFh-g4-RzU" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer numberOfTapsRequired="2" id="Xsp-fE-W2t">
+                <tapGestureRecognizer id="xfs-ws-Mua">
                     <connections>
-                        <action selector="generateAddTask:" destination="iM9-Dz-NiG" id="7N9-de-ZKn"/>
+                        <action selector="generateAddTask:" destination="iM9-Dz-NiG" id="I49-aX-GBE"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
